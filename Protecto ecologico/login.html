@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+       html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background: url('fondo_index.jpg') center center/cover no-repeat;
+            background-attachment: fixed; 
+            background-position: center center;
+        }
+      .fila{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor_fila{
+        display: flex;
+        flex-direction: row;
+    }
+    .celda{
+        flex:1;
+    }
+    .celda_{
+        flex:3;
+    }
+  
+</style>
+<body>
+    <div class="container" style="background-color: gray;border: 1px solid #000;">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="fila" style="margin-top:30px;" > 
+                          
+                <div class="celda">
+                    <p><b>Username:</b></p>
+                </div>
+                <div class="celda_" style="margin-left:30px; ">
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="celda">
+                    
+                </div>
+               
+            </div>
+            <div class="fila" style="margin-top:30px;" > 
+                          
+                <div class="celda">
+                    <p><b>Password:</b></p>
+                </div>
+                <div class="celda_" style="margin-left:30px; ">
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="celda">
+                    
+                </div>
+                
+            </div>
+            <div class="fila" style="margin-top:30px;" > 
+                          
+                <div class="celda">
+                    
+                </div>
+                <div class="celda" style="margin-left:30px; ">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="celda" >
+                  
+                </div>
+              
+            </div>
+            
+            
+            
+        </form>
+        <div class="message" id="loginMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

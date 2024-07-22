@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+      html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background: url('fondo_index.jpg') center center/cover no-repeat;
+            background-attachment: fixed; 
+            background-position: center center;
+        }
+    .fila{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 20px !important;
+  }
+  .contenedor_fila{
+      display: flex;
+      flex-direction: row;
+  }
+  .celda{
+      flex:1;
+  }
+  .celda_{
+      flex:3;
+  }
+
+</style>
+<body >
+    <div class="fila" style="margin-top:0px;" > 
+                          
+        <div class="celda">
+            
+        </div>
+        
+        <div class="celda">
+            
+        </div>
+        <div class="celda">
+            
+        </div>
+        
+        <div class="celda">
+            
+        </div>
+        <div class="celda">
+            
+        </div>
+        
+        <div class="celda">
+            
+        </div>
+        <div class="celda">
+            <button onclick="window.location.href='register.html'" style="background-color: grey;border: 1px solid #000;">Registrarse</button>
+        </div>
+        
+        <div class="celda">
+            <button onclick="window.location.href='login.html'" style="white-space: nowrap;background-color: grey;border: 1px solid #000;">Iniciar Sesión</button>
+        </div>
+       
+    </div>
+    <h1 style="margin-top: -170px;color: white;">Ecology Proyect</h1>
+    
+       
+       
+ 
+</body>
+</html>
